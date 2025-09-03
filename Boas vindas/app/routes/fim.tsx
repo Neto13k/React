@@ -1,4 +1,4 @@
-import { Boasvindas } from "~/components/boasvindas";
+import { Boasvindas } from "..//components/boasvindas";
 import type { Route } from "./+types/home";
 export function meta({}: Route.MetaArgs) {
   return [
