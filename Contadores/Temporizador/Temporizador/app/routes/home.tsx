@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { ContarSegundos } from "app/Components/Contador"
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Contador" },
+    { name: "description", content: "Primeiro contador realizado no React Router!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return < ContarSegundos/>;
 }
