@@ -14,7 +14,7 @@ export function ContarSegundos (){
     return(
         <div>
             <p> O contador está em {segundos}, segundos</p>
-            <button onClick={() => SetSegundos(0)}>Reiniciar contagem</button>
+            <button onClick={() => SetSegundos(0)}>zerar</button>
 
         </div>
     );
