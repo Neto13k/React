@@ -1,0 +1,13 @@
+input {
+    padding: 10px;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    width: 300px;
+    color: #000;
+}
+
+p {
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #000000;
+}
