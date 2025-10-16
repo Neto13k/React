@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
+import "app/formulario.css"
 
 export function FormularioDados() {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, formState: {errors} } = useForm();
 
   function onSubmit() {
     alert("Dados enviados com sucesso!");
@@ -15,6 +16,8 @@ export function FormularioDados() {
           type="text"
           placeholder="Digite seu nome"
           {...register("nome", { required: "Nome é obrigatório" })}
+          className={errors.nome ? "erro" : ""}
+
         />
         <br></br><br></br>
 
@@ -22,6 +25,8 @@ export function FormularioDados() {
           type="email"
           placeholder="Digite seu e-mail"
           {...register("email", { required: "Email é obrigatório" })}
+          className={errors.email ? "erro" : ""}
+
         />
 
         <button type="submit">Enviar</button>
