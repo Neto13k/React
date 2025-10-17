@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { Mensagem } from "../components/input";
+import { Mensagem } from "../components/InputSimples";
 
 export function meta({}: Route.MetaArgs) {
   return [
