@@ -3,7 +3,7 @@ import { Mensagem } from "../components/InputSimples";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Fomulario" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }

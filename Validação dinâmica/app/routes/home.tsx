@@ -3,7 +3,7 @@ import { DataForm } from "app/components/Form"
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Validação Dinâmica" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
