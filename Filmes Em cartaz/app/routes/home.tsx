@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Citizen } from "app/Components/Cartão"
+import { Poster } from "app/Components/Filme";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Carta de apresentação" },
+    { title: "Lista de filmes" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
 
 export default function Home() {
-  return < Citizen />;
+  return <Poster />;
 }
