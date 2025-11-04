@@ -1,29 +1,17 @@
 import "app/Mensagem.css"
-import { useState, useEffect } from "react";
 
-export function Person({ Name }) {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+export function Message({Hour, Name }) {
   return (
-    <div className="Message">
-      <h1>Olá, {Name}! Seja bem-vindo(a).</h1>
-      <h2>Atualmente são {time.toLocaleTimeString()}.</h2>
+    <div>
+      <h1>{Hour}, {Name}. </h1>
     </div>
   );
 }
 
-export function Message() {
+export function Messagefinal() {
   return (
     <>
-      <Person Name="José Hermes" />
+      <Message Hour="Bom dia" Name="José Hermes" />
     </>
   );
 }

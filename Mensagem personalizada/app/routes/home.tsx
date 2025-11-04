@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { Message } from"app/Components/Mensagem"
+import { Messagefinal } from"app/Components/Mensagem"
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +9,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Message />;
+  return <Messagefinal />;
 }
