@@ -1,17 +1,22 @@
 import "app/Mensagem.css"
 
-export function Message({Hour, Name }) {
+export function Mensagem({horaDoDia, usuario }) {
   return (
     <div>
-      <h1>{Hour}, {Name}. </h1>
+      <h1>{horaDoDia}, {usuario}!! </h1>
     </div>
   );
 }
 
-export function Messagefinal() {
+export function MensagemFinal() {
   return (
     <>
-      <Message Hour="Bom dia" Name="José Hermes" />
+      <Mensagem horaDoDia="Bom dia" usuario="José Hermes" />
+      <br />
+      <Mensagem horaDoDia="Boa Tarde" usuario="Pedro Soares" />
+      <br />
+      <Mensagem horaDoDia="Boa Noite" usuario="Ana Paula" />
+      
     </>
   );
 }
