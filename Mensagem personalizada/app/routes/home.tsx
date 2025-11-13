@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import { MensagemFinal } from"app/Components/Mensagem"
+import { MensagemFinal } from"app/Components/MensagemFinal"
 
 export function meta({}: Route.MetaArgs) {
   return [
